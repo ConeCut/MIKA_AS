@@ -1,44 +1,85 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="no">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>MIKA AS</title>
+  <meta name="description" content="MIKA AS – transport og levering av pakker i hele Norge.">
+
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <link rel="icon" href="img/mika_favicon.ico">
 </head>
 
 <body>
 
-<header id="top-menu" class="top-menu">
-  <div class="logo">LOGO PLACEHOLDER</div>
-  <a href="#">Hjemmeside</a>
-  <a href="#">Hvem er vi</a>
-  <a href="#">Kontakt oss</a>
-  <a href="#">Samarbeidspartnere</a>
-  <a href="#">Hva vi gjør</a>
-</header>
-  <H1 class="web_title">Send pakker i hele Norge</H1>
-  <script src="js/app.js"></script>
+<header class="top-menu">
 
-  <div class = "about">
-    <H2>Hva tilbyr vi</H2>
-  </div>
+  <a class="logo" href="index.html">
+    <img src="img/MIKA.png" alt="MIKA AS">
+  </a>
+
+  <nav class="navigation">
+    <a href="index.html">Hjemmeside</a>
+    <a href="pages/about.html">Hvem er vi</a>
+    <a href="pages/contact.html">Kontakt oss</a>
+    <a href="pages/partners.html">Samarbeidspartnere</a>
+    <button href="pages/services.html" class="menu_btn">Send pakker</button>
+  </nav>
+
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="Åpne meny">
+    ☰
+  </button>
+
+</header>
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero_text">
+      <h1>Mobilitet, initiativ, kvalitet og ambisjon</h1>
+      <h2>Pålitelig transport. Tilpasset dine behov.</h2>
+      <h2>Spor sendingen din</h2>
+      <div class="hero_sporing">
+        <input class="hero_input" placeholder="Sjekk status på pakken din" type="text">
+        <button class="hero_btn" type="button">Spor</button>
+      </div>
+    </div>
+
+    <div class="main_img_wrapper">
+      <img
+        src="img/MIKA_DRIVING1.png"
+        alt="MIKA AS transportbil på norsk vei">
+    </div>
+
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>Tjenester</h2>
+      <h3>Vi tilbyr trygg og effektiv transport av pakker over hele Norge. Velg mellom standardlevering, ekspresslevering og andre transportløsninger tilpasset dine behov.</h3>
+      <a href="pages/services.html">→ Se alle våre tjenester her</a>
+    </div>
+    <div class="container">
+      <h2>Priser</h2>
+      <h3>Våre priser baseres på blant annet pakkens størrelse, vekt og leveringssted. Vi jobber for å tilby konkurransedyktige priser uten å gå på kompromiss med kvaliteten.</h3>
+      <a href="pages/price_calc.html">→ Se alle våre priser her</a>
+    </div>
+    <div class="container">
+      <h2>Kundeservice / FAQ</h2>
+      <h3>Har du spørsmål om en bestilling, levering eller våre tjenester? Ta kontakt med oss. Vi hjelper deg med å finne en løsning så raskt som mulig.</h3>
+      <a href="pages/contact.html">→ Kontakt kundeservice her</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/app.js"></script>
 
 </body>
-
 </html>
