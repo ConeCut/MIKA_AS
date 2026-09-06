@@ -401,6 +401,7 @@ footer{
 
   .footer_container {
     text-align: center;
+    align-items: center;
   }
 }
 

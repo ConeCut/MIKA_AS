@@ -1,4 +1,4 @@
-const menu = document.getElementById("top-menu");
+const menu = document.querySelector(".top-menu");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
