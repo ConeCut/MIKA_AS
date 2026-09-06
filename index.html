@@ -25,7 +25,7 @@
     <a href="pages/about.html">Hvem er vi</a>
     <a href="pages/contact.html">Kontakt oss</a>
     <a href="pages/partners.html">Samarbeidspartnere</a>
-    <button href="pages/services.html" class="menu_btn">Send pakker</button>
+    <button class="menu_btn" type="button" onclick="redirectToServices()">Send pakker</button>
   </nav>
 
   <button
@@ -60,24 +60,78 @@
   </section>
 
   <section class="about">
-    <div class="container">
+    <div class="container fade-up">
       <h2>Tjenester</h2>
       <h3>Vi tilbyr trygg og effektiv transport av pakker over hele Norge. Velg mellom standardlevering, ekspresslevering og andre transportløsninger tilpasset dine behov.</h3>
       <a href="pages/services.html">→ Se alle våre tjenester her</a>
     </div>
-    <div class="container">
+    <div class="container fade-up">
       <h2>Priser</h2>
       <h3>Våre priser baseres på blant annet pakkens størrelse, vekt og leveringssted. Vi jobber for å tilby konkurransedyktige priser uten å gå på kompromiss med kvaliteten.</h3>
       <a href="pages/price_calc.html">→ Se alle våre priser her</a>
     </div>
-    <div class="container">
+    <div class="container fade-up">
       <h2>Kundeservice / FAQ</h2>
       <h3>Har du spørsmål om en bestilling, levering eller våre tjenester? Ta kontakt med oss. Vi hjelper deg med å finne en løsning så raskt som mulig.</h3>
       <a href="pages/contact.html">→ Kontakt kundeservice her</a>
     </div>
   </section>
 
+  <section class="faq">
+    <div class="faq_container">
+      <div class="container fade-up"></div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="news-container fade-up">
+      <h2>Nye kontrakter!</h2>
+      <img src="img/hands.png" alt="worker fleet">
+      <h3>Vi har nå fått inn nye kontrakter med Firma XYZ!</h3>
+      <a href="pages/services.html">→ Les mer</a>
+    </div>
+    <div class="news-container fade-up">
+      <h2>Nye biler!</h2>
+      <img src="img/cars.png" alt="car fleet">
+      <h3>Vi har nå nye el-biler! Vi setter stor pris på bærekraftighet</h3>
+      <a href="pages/price_calc.html">→ Les mer</a>
+    </div>
+    <div class="news-container fade-up">
+      <h2>Nye Ansatte!</h2>
+      <img src="img/workers.png" alt="worker fleet">
+      <h3>Vi har blitt større! Vi har 10 nye ansatte i bedriften!</h3>
+      <a href="pages/contact.html">→ Les mer</a>
+    </div>
+  </section>
+
 </main>
+
+<footer class="fade-up">
+  <div class="footer_container">
+    <div class="footer_text_main">Om oss</div>
+    <a href="pages/about.html" class="footer_text">Mika AS</a>
+    <a href="pages/sustainability.html" class="footer_text">Bærekraftig Transport</a>
+    <a href="pages/open_positions.html" class="footer_text">Jobbe hos Mika</a>
+    <a href="pages/privacy_statement.html" class="footer_text">Privacy Statement</a>
+    <a href="pages/cookie_policy.html" class="footer_text">Cookie Policy</a>
+  </div>
+  <div class="footer_container">
+    <div class="footer_text_main">Våre tjenester</div>
+    <a href="pages/services.html" class="footer_text">On-Road Leveranse</a>
+    <a href="pages/services.html" class="footer_text">Flyttevask</a>
+    <a href="pages/services.html" class="footer_text">Flyttebyrå</a>
+  </div>
+  <div class="footer_container">
+    <div class="footer_text_main">Hjelp</div>
+    <a href="pages/FAQ.html" class="footer_text">FAQ</a>
+    <a href="pages/transport_info.html" class="footer_text">Pakkeintruksjoner</a>
+    <a href="pages/transport_info.html" class="footer_text">Viktig Informasjon</a>
+    <a href="pages/transport_info.html" class="footer_text">Generelle Transportvilkår</a>
+    <a href="pages/claims.html" class="footer_text">Reklamasjonsrett</a>
+    <a href="pages/FAQ.html" class="footer_text">Søk</a>
+  </div>
+  <button class="contact_button">Kontakt oss</button>
+</footer>
 
 <script src="js/app.js"></script>
 
