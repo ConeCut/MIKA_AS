@@ -17,6 +17,10 @@ main {
   box-sizing: border-box;
 }
 
+button{
+  border: none;
+}
+
 
 /* =========================
    Header / Navigation
@@ -199,6 +203,100 @@ main {
 }
 
 /* =========================
+   FAQ
+   ========================= */
+
+.faq {
+  display: flex;
+  flex-direction: row;
+
+  margin: 20px 50px;
+  padding: 15px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  gap: 3rem;
+}
+
+.question_container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.faq_container {
+  border-bottom: 1px solid #061420;
+}
+
+.faq_container:last-child {
+  border-bottom: none;
+}
+
+.contact_form {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact_form h1 {
+  text-align: center;
+}
+
+.contact_form input {
+  margin: 5px 0;
+  border-radius: 0.5rem;
+}
+
+.question {
+  width: 100%;
+  padding: 1rem 0;
+
+  border: none;
+  background: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #061420;
+
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq_answer {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.3s ease;
+}
+
+.faq_answer p {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+.faq_icon {
+  font-size: 1rem;
+
+  transition: transform 0.3s ease;
+}
+
+.faq_container.open .faq_answer {
+  max-height: 500px;
+}
+
+.faq_container.open .faq_icon {
+  transform: rotate(45deg);
+}
+
+/* =========================
    News
    ========================= */
 
@@ -250,6 +348,21 @@ main {
   border-radius: 0.5rem;
 }
 
+/* =========================
+   Contact
+   ========================= */
+
+.contact_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px 50px;
+  padding: 30px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+}
 
 /* =========================
    Footer
@@ -261,6 +374,12 @@ footer{
   background-color: #F1F3F5;
   padding: 30px;
   align-items: flex-start;
+}
+
+.footer-logo{
+  height: 125px;
+  width: auto;
+  display: block;
 }
 
 .footer_container {
@@ -279,6 +398,12 @@ footer{
   text-decoration: none;
   width: fit-content;
   color: #061420;
+}
+
+#footer_last{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact_button{
@@ -402,6 +527,10 @@ footer{
   .footer_container {
     text-align: center;
     align-items: center;
+  }
+
+  .faq{
+    flex-flow: column;
   }
 }
 

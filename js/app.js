@@ -42,3 +42,13 @@ const observer = new IntersectionObserver((entries) => {
 fadeElements.forEach((element) => {
   observer.observe(element);
 });
+
+const faqQuestions = document.querySelectorAll(".question");
+
+faqQuestions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const faq = question.parentElement;
+
+    faq.classList.toggle("open");
+  });
+});
