@@ -5,7 +5,6 @@
 body {
   margin: 0;
   padding-top: 90px;
-  font-family: system-ui, sans-serif;
   font-family: Inter, sans-serif;
 }
 
@@ -202,6 +201,22 @@ button{
   gap: 1rem;
 }
 
+textarea{
+  resize: none;
+}
+
+.about_page_hero_image {
+  flex: 0 0 25%;
+}
+
+.about_page_hero_image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+
 /* =========================
    FAQ
    ========================= */
@@ -235,10 +250,13 @@ button{
 }
 
 .contact_form {
-  flex: 0 0 30%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 50px;
+  padding: 30px;
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
 }
 
 .contact_form h1 {
@@ -296,6 +314,817 @@ button{
   transform: rotate(45deg);
 }
 
+
+/* =========================
+   Pages
+   ========================= */
+
+.page_main {
+  width: 100%;
+}
+
+.page_header {
+  width: min(90%, 1200px);
+  margin: 20px auto;
+  padding: 50px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.page_header h1 {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: #061420;
+}
+
+.page_header p {
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #061420;
+}
+
+.page_label {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  color: #061420;
+}
+
+.page_hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 20px 50px;
+  padding: 30px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.page_hero_text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.page_hero_text h1 {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  color: #061420;
+}
+
+.page_hero_text h2 {
+  margin: 0 0 1rem 0;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  font-weight: normal;
+  color: #061420;
+}
+
+.page_hero_text p {
+  max-width: 700px;
+  line-height: 1.6;
+  color: #061420;
+}
+
+.page_hero_image {
+  flex: 0 0 45%;
+}
+
+.page_hero_image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.page_section {
+  width: min(90%, 1200px);
+  margin: 50px auto;
+  padding: 30px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.page_section h2 {
+  color: #061420;
+}
+
+.page_section h3 {
+  color: #061420;
+}
+
+.page_section p {
+  line-height: 1.6;
+  color: #061420;
+}
+
+.section_heading {
+  margin-bottom: 2rem;
+}
+
+.section_heading p {
+  max-width: 800px;
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.info_card {
+  padding: 1.5rem;
+
+  background-color: white;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.info_card h3 {
+  margin-top: 0;
+}
+
+.info_card p {
+  margin-bottom: 0;
+}
+
+.two_column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.page_cta {
+  width: min(90%, 1200px);
+  margin: 50px auto;
+  padding: 40px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.page_cta h2 {
+  margin-top: 0;
+  color: #061420;
+}
+
+.page_cta p {
+  color: #061420;
+  line-height: 1.6;
+}
+
+.page_cta .contact_button {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.contact_button {
+  display: inline-block;
+  height: fit-content;
+  min-width: 80px;
+
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+
+  background-color: #061420;
+  color: white;
+
+  cursor: pointer;
+  padding: 15px;
+
+  text-decoration: none;
+}
+
+
+/* =========================
+   Contact
+   ========================= */
+
+.contact_page {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  margin: 20px 50px;
+  gap: 3rem;
+
+  color: #061420;
+}
+
+.contact_intro {
+  flex: 1;
+  padding: 30px;
+}
+
+.contact_intro h1 {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  color: #061420;
+}
+
+.contact_intro b {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #061420;
+}
+
+.contact_intro i {
+  display: block;
+  margin-bottom: 1rem;
+  color: #061420;
+}
+
+.contact_intro p {
+  line-height: 1.6;
+  color: #061420;
+}
+
+.contact_information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact_information h3 {
+  margin: 0;
+  color: #061420;
+}
+
+.contact_information p {
+  margin: 0.25rem 0 0 0;
+}
+
+.contact_page .contact_form {
+  flex: 0 0 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  margin: 0;
+  padding: 30px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+}
+
+.contact_page .contact_form h1 {
+  margin-top: 0;
+  color: #061420;
+}
+
+.contact_page .contact_form p {
+  color: #061420;
+}
+
+.contact_container {
+  width: 100%;
+}
+
+.contact_step {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.step_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #061420;
+}
+
+.step_block p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.85rem;
+}
+
+.numbered_box {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #061420;
+  color: white;
+
+  border-radius: 0.5rem;
+
+  font-weight: bold;
+}
+
+.form_step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  color: #061420;
+}
+
+.form_step h2 {
+  margin: 0 0 1rem 0;
+}
+
+.form_step label {
+  font-weight: bold;
+  color: #061420;
+}
+
+.form_step input,
+.form_step textarea,
+.form_step select {
+  width: 100%;
+
+  padding: 15px;
+
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+}
+
+.selection_step{
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.selection_step.current{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.selection_step label {
+  font-weight: bold;
+  color: #061420;
+}
+
+.selection_step textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 15px;
+
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+}
+
+.selection_step input {
+  width: 100%;
+  padding: 15px;
+
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+}
+
+.selection_button {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  color: #061420;
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.selection_button:hover {
+  background-color: #061420;
+  color: white;
+}
+
+.selection_button.selected {
+  width: 100%;
+  padding: 15px;
+  background-color: #061420;
+  color: white;
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+.error {
+  min-height: 1.5rem;
+  margin: 0.75rem 0 0 0;
+  color: #061420;
+}
+
+.current_step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 2rem;
+}
+
+.current_step p {
+  margin: 0;
+  color: #061420;
+}
+
+.current_step button {
+  padding: 12px 20px;
+
+  background-color: #061420;
+  color: white;
+
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   FAQ Page
+   ========================= */
+
+.faq_page {
+  width: min(90%, 1200px);
+  margin: 20px auto;
+  padding: 15px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+}
+
+.faq_page .faq_container {
+  border-bottom: 1px solid #061420;
+}
+
+.faq_page .question {
+  padding: 1.5rem 0;
+}
+
+.faq_page .faq_answer p {
+  max-width: 900px;
+  line-height: 1.6;
+  color: #061420;
+}
+
+
+/* =========================
+   Services
+   ========================= */
+
+.service_grid {
+  width: min(90%, 1200px);
+  margin: 20px auto 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+}
+
+.service_card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.service_card h2 {
+  margin-top: 0;
+}
+
+.service_card p {
+  line-height: 1.6;
+}
+
+.service_card a {
+  margin-top: auto;
+  padding-top: 1rem;
+
+  color: #061420;
+  font-size: large;
+}
+
+
+/* =========================
+   Partners
+   ========================= */
+
+.partner_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.partner_card {
+  padding: 2rem;
+
+  background-color: white;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.partner_logo {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+  font-weight: bold;
+}
+
+.partner_card h3 {
+  margin-top: 0;
+}
+
+.partner_card p {
+  line-height: 1.6;
+}
+
+.partner_card a {
+  color: #061420;
+}
+
+
+/* =========================
+   Jobs
+   ========================= */
+
+.job_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.job_card {
+  padding: 2rem;
+
+  background-color: white;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.job_card h3 {
+  margin-top: 0;
+}
+
+.job_card p {
+  line-height: 1.6;
+}
+
+.job_card a {
+  color: #061420;
+}
+
+
+/* =========================
+   Price Calculator
+   ========================= */
+
+.price_calculator {
+  width: min(90%, 1200px);
+  margin: 20px auto 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 3rem;
+}
+
+.calculator_form,
+.calculator_result {
+  padding: 30px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.calculator_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.calculator_form h2,
+.calculator_result h2 {
+  margin-top: 0;
+}
+
+.calculator_form label {
+  font-weight: bold;
+}
+
+.calculator_form input,
+.calculator_form select {
+  width: 100%;
+
+  padding: 15px;
+
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+}
+
+.calculator_form button {
+  margin-top: 1rem;
+
+  padding: 15px;
+
+  background-color: #061420;
+  color: white;
+
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.calculator_result p {
+  line-height: 1.6;
+}
+
+.price_result {
+  margin: 2rem 0;
+
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: bold;
+
+  color: #061420;
+}
+
+
+/* =========================
+   Tracking
+   ========================= */
+
+.tracking_section {
+  width: min(90%, 1200px);
+  margin: 20px auto 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 3rem;
+}
+
+.tracking_form,
+.tracking_result {
+  padding: 30px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.tracking_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tracking_form label {
+  font-weight: bold;
+}
+
+.tracking_form input {
+  padding: 15px;
+
+  border: 1px solid #061420;
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+}
+
+.tracking_form button {
+  margin-top: 1rem;
+
+  padding: 15px;
+
+  background-color: #061420;
+  color: white;
+
+  border-radius: 0.5rem;
+
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.tracking_result p {
+  line-height: 1.6;
+}
+
+.tracking_timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.tracking_event {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tracking_event h3 {
+  margin: 0;
+  color: #061420;
+}
+
+.tracking_event p {
+  margin: 0.25rem 0 0 0;
+}
+
+
+/* =========================
+   Legal Pages
+   ========================= */
+
+.legal_page {
+  width: min(90%, 1000px);
+  margin: 20px auto 50px;
+  padding: 40px;
+
+  background-color: #F1F3F5;
+  border-radius: 0.5rem;
+
+  color: #061420;
+}
+
+.legal_page h2 {
+  margin-top: 2.5rem;
+  color: #061420;
+}
+
+.legal_page h2:first-child {
+  margin-top: 0;
+}
+
+.legal_page p,
+.legal_page li {
+  line-height: 1.7;
+}
+
+.legal_page ul {
+  padding-left: 1.5rem;
+}
+
+.legal_page a {
+  color: #061420;
+}
+
+
 /* =========================
    News
    ========================= */
@@ -309,6 +1138,7 @@ button{
   justify-content: space-around;
   gap: 1rem;
 }
+
 
 /* =========================
    News Container
@@ -348,21 +1178,6 @@ button{
   border-radius: 0.5rem;
 }
 
-/* =========================
-   Contact
-   ========================= */
-
-.contact_form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin: 20px 50px;
-  padding: 30px;
-
-  background-color: #F1F3F5;
-  border-radius: 0.5rem;
-}
 
 /* =========================
    Footer
@@ -415,7 +1230,9 @@ footer{
   color: white;
   cursor: pointer;
   padding: 15px;
+  text-decoration: none;
 }
+
 
 /* =========================
    Animations
@@ -431,6 +1248,7 @@ footer{
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* =========================
    Tablet
@@ -491,6 +1309,7 @@ footer{
   .hero_btn {
     min-width: 4rem;
   }
+
   .about{
     flex-flow: column;
   }
@@ -506,6 +1325,7 @@ footer{
   .container h2{
     text-align: left;
   }
+
   .container h3{
     text-align: left;
   }
@@ -531,6 +1351,60 @@ footer{
 
   .faq{
     flex-flow: column;
+  }
+
+  .page_hero {
+    flex-flow: column-reverse;
+  }
+
+  .page_hero_image {
+    width: 100%;
+  }
+
+  .page_hero_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page_hero_text p {
+    margin-inline: auto;
+  }
+
+  .info_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .two_column {
+    grid-template-columns: 1fr;
+  }
+
+  .price_calculator {
+    grid-template-columns: 1fr;
+  }
+
+  .tracking_section {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_page {
+    flex-direction: column;
+    margin: 20px 50px;
+  }
+
+  .contact_page .contact_form {
+    flex: none;
   }
 }
 
@@ -632,5 +1506,149 @@ footer{
   .news-container {
     width: 100%;
     padding: 0 1.5rem 1.5rem;
+  }
+
+  .page_header {
+    width: auto;
+    margin: 0 1rem 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .page_header h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .page_hero {
+    margin: 0 1rem 2rem;
+    padding: 1rem;
+
+    flex-direction: column-reverse;
+  }
+
+  .page_hero_text {
+    padding: 1rem;
+  }
+
+  .page_hero_text h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .page_section {
+    width: auto;
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .page_cta {
+    width: auto;
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .info_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .two_column {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service_grid {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 2rem 1rem;
+  }
+
+  .partner_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_page {
+    margin: 0 1rem 2rem;
+    gap: 1rem;
+  }
+
+  .contact_intro {
+    padding: 1.5rem;
+  }
+
+  .contact_intro h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .contact_page .contact_form {
+    padding: 1.5rem;
+  }
+
+  .contact_step {
+    gap: 0.5rem;
+  }
+
+  .step_block p {
+    font-size: 0.75rem;
+  }
+
+  .selection_button {
+    padding: 15px;
+  }
+
+  .faq_page {
+    width: auto;
+    margin: 0 1rem 2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .price_calculator {
+    width: auto;
+    margin: 0 1rem 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .calculator_form,
+  .calculator_result {
+    padding: 1.5rem;
+  }
+
+  .tracking_section {
+    width: auto;
+    margin: 0 1rem 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .tracking_form,
+  .tracking_result {
+    padding: 1.5rem;
+  }
+
+  .legal_page {
+    width: auto;
+    margin: 0 1rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .legal_page h2 {
+    margin-top: 2rem;
+  }
+
+  footer{
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .footer_container {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    height: 100px;
   }
 }

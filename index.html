@@ -151,13 +151,13 @@
       <h2>Nye biler!</h2>
       <img src="img/cars.png" alt="car fleet">
       <h3>Vi har nå nye el-biler! Vi setter stor pris på bærekraftighet</h3>
-      <a href="pages/price_calc.html">→ Les mer</a>
+      <a href="pages/sustainability.html">→ Les mer</a>
     </div>
     <div class="news-container fade-up">
       <h2>Nye Ansatte!</h2>
       <img src="img/workers.png" alt="worker fleet">
       <h3>Vi har blitt større! Vi har 10 nye ansatte i bedriften!</h3>
-      <a href="pages/contact.html">→ Les mer</a>
+      <a href="pages/about.html">→ Les mer</a>
     </div>
   </section>
 
@@ -184,20 +184,34 @@
             <p>Kontakt</p>
           </div>
         </div>
-        <div class="selection_step">
-          <button>Pakker og smågods</button>
-          <button>Bedriftstransport</button>
-          <button>Annen forespørsel</button>
+
+        <div class="selection_step current">
+          <button class="selection_button">Pakker og smågods</button>
+          <button class="selection_button">Bedriftstransport</button>
+          <button class="selection_button">Annen forespørsel</button>
         </div>
+
+        <div class="selection_step">
+          <label for="request_description">
+            Beskriv oppdraget
+          </label>
+          <textarea id="request_description" name="request_description" placeholder="Fortell oss litt om oppdraget..."></textarea>
+
+        </div>
+
+        <div class="selection_step">
+          <input placeholder="Navn og Etternavn"></input>
+          <input placeholder="E-post"></input>
+          <input placeholder="Tlf. nr."></input>
+        </div>
+
+        <p class = "error"></p>
 
         <div class="current_step">
           <p>Steg 1/3</p>
-          <button>Neste steg</button>
+          <button class="neste_steg">Neste steg</button>
         </div>
       </div>
-
-      <button type="button">Send inn</button>
-
     </div>
   </section>
 
@@ -222,7 +236,6 @@
     <div class="footer_text_main">Hjelp</div>
     <a href="pages/FAQ.html" class="footer_text">FAQ</a>
     <a href="pages/transport_info.html" class="footer_text">Pakkeintruksjoner</a>
-    <a href="pages/transport_info.html" class="footer_text">Viktig Informasjon</a>
     <a href="pages/transport_info.html" class="footer_text">Generelle Transportvilkår</a>
     <a href="pages/claims.html" class="footer_text">Reklamasjonsrett</a>
     <a href="pages/FAQ.html" class="footer_text">Søk</a>

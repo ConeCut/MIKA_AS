@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>MIKA AS</title>
-  <meta name="Kontakt oss" content="MIKA AS – transport og levering av pakker i hele Norge.">
+  <title>Kontakt oss - MIKA AS</title>
+  <meta name="description" content="Kontakt MIKA AS for transport, levering og andre transportløsninger.">
 
-  <link rel="icon" href="../img/mika_favicon.ico">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/mika_favicon.ico">
 </head>
 
 <body>
 
 <header class="top-menu">
 
-  <a href="../index.html" class="logo">
+  <a class="logo" href="../index.html">
     <img src="../img/MIKA.png" alt="MIKA AS">
   </a>
 
@@ -28,7 +28,10 @@
     <button class="menu_btn" type="button" onclick="redirectToServicesFromPages()">Send pakker</button>
   </nav>
 
-  <button class="menu-button" type="button" aria-label="Åpne meny">
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="Åpne meny">
     ☰
   </button>
 
@@ -36,11 +39,256 @@
 
 <main>
 
-  <!-- Page content goes here -->
+  <section class="contact_page">
+
+    <div class="contact_intro">
+
+      <b>Kontakt oss nå</b>
+
+      <h1>Hva skal vi få frem?</h1>
+
+      <i>
+        Fortell oss hva du trenger.
+      </i>
+
+      <p>
+        Vi hjelper deg med å finne riktig transportløsning
+        - og en pris som passer oppdraget.
+      </p>
+
+      <div class="contact_information">
+
+        <div>
+          <h3>Telefon</h3>
+          <p>+47 XX XX XX XX</p>
+        </div>
+
+        <div>
+          <h3>E-post</h3>
+          <p>kontakt@mika-as.eu</p>
+        </div>
+
+        <div>
+          <h3>Åpningstider</h3>
+          <p>Mandag - fredag</p>
+          <p>08:00 - 16:00</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="contact_form">
+
+      <h1>Send oss en forespørsel</h1>
+
+      <div class="contact_container">
+
+        <div class="contact_step">
+
+          <div class="step_block">
+            <div class="numbered_box">1</div>
+            <p>Type forespørsel</p>
+          </div>
+
+          <div class="step_block">
+            <div class="numbered_box">2</div>
+            <p>Behov</p>
+          </div>
+
+          <div class="step_block">
+            <div class="numbered_box">3</div>
+            <p>Kontakt</p>
+          </div>
+
+        </div>
+
+
+        <div class="selection_step current">
+
+          <p>
+            Hva gjelder forespørselen?
+          </p>
+
+          <button
+            class="selection_button"
+            type="button">
+            Pakker og smågods
+          </button>
+
+          <button
+            class="selection_button"
+            type="button">
+            Bedriftstransport
+          </button>
+
+          <button
+            class="selection_button"
+            type="button">
+            Annen forespørsel
+          </button>
+
+        </div>
+
+
+        <div class="selection_step">
+
+          <label for="request_description">
+            Beskriv oppdraget
+          </label>
+
+          <textarea
+            id="request_description"
+            name="request_description"
+            placeholder="Fortell oss litt om oppdraget..."></textarea>
+
+        </div>
+
+
+        <div class="selection_step">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Navn og Etternavn">
+
+          <input
+            type="email"
+            name="email"
+            placeholder="E-post">
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Tlf. nr.">
+
+        </div>
+
+
+        <p class="error"></p>
+
+
+        <div class="current_step">
+
+          <p>Steg 1/3</p>
+
+          <button
+            class="neste_steg"
+            type="button">
+            Neste steg
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </main>
+
+
+<footer class="fade-up">
+
+  <div class="footer_container">
+
+    <div class="footer_text_main">
+      Om oss
+    </div>
+
+    <a href="about.html" class="footer_text">
+      Mika AS
+    </a>
+
+    <a href="sustainability.html" class="footer_text">
+      Bærekraftig Transport
+    </a>
+
+    <a href="open_positions.html" class="footer_text">
+      Jobbe hos Mika
+    </a>
+
+    <a href="privacy_statement.html" class="footer_text">
+      Privacy Statement
+    </a>
+
+    <a href="cookie_policy.html" class="footer_text">
+      Cookie Policy
+    </a>
+
+  </div>
+
+
+  <div class="footer_container">
+
+    <div class="footer_text_main">
+      Våre tjenester
+    </div>
+
+    <a href="services.html" class="footer_text">
+      On-Road Leveranse
+    </a>
+
+    <a href="services.html" class="footer_text">
+      Flyttevask
+    </a>
+
+    <a href="services.html" class="footer_text">
+      Flyttebyrå
+    </a>
+
+  </div>
+
+
+  <div class="footer_container">
+
+    <div class="footer_text_main">
+      Hjelp
+    </div>
+
+    <a href="FAQ.html" class="footer_text">
+      FAQ
+    </a>
+
+    <a href="transport_info.html" class="footer_text">
+      Pakkeintruksjoner
+    </a>
+
+    <a href="transport_info.html" class="footer_text">
+      Generelle Transportvilkår
+    </a>
+
+    <a href="claims.html" class="footer_text">
+      Reklamasjonsrett
+    </a>
+
+    <a href="FAQ.html" class="footer_text">
+      Søk
+    </a>
+
+  </div>
+
+
+  <div id="footer_last">
+
+    <img
+      class="footer-logo"
+      src="../img/MIKA.png"
+      alt="MIKA AS">
+
+    <button class="contact_button">
+      Kontakt oss ↗
+    </button>
+
+  </div>
+
+</footer>
+
 
 <script src="../js/app.js"></script>
 
 </body>
+
 </html>

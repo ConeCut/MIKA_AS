@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>MIKA AS</title>
-  <meta name="Samarbeidspartnere" content="MIKA AS – transport og levering av pakker i hele Norge.">
+  <title>MIKA AS | Prisberegner</title>
+  <meta
+    name="description"
+    content="Beregn en veiledende pris for transport hos MIKA AS."
+  >
 
   <link rel="icon" href="../img/mika_favicon.ico">
   <link rel="stylesheet" href="../css/style.css">
@@ -24,21 +27,209 @@
     <a href="../index.html">Hjemmeside</a>
     <a href="about.html">Hvem er vi</a>
     <a href="contact.html">Kontakt oss</a>
-    <a href="partners.html">Samarbeidspartnere</a>
-    <button class="menu_btn" type="button" onclick="redirectToServicesFromPages()">Send pakker</button>
+    <a href="tracking.html">Spor pakker</a>
+
+    <button class="menu_btn" type="button" onclick="redirectToServicesFromPages()">
+      Send pakker
+    </button>
   </nav>
 
-  <button class="menu-button" type="button" aria-label="Åpne meny">
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="Åpne meny">
     ☰
   </button>
 
 </header>
 
-<main>
 
-  <!-- Page content goes here -->
+<main class="page_main">
+
+  <section class="page_header fade-up">
+
+    <p class="page_label">PRIS</p>
+
+    <h1>Hva koster det?</h1>
+
+    <p>
+      Bruk prisberegneren for å få en veiledende pris basert på
+      informasjonen om sendingen din.
+    </p>
+
+  </section>
+
+
+  <section class="price_calculator fade-up">
+
+    <div class="calculator_form">
+
+      <h2>Beregn pris</h2>
+
+      <label for="delivery_from">
+        Fra postnummer
+      </label>
+
+      <input
+        id="delivery_from"
+        type="text"
+        inputmode="numeric"
+        placeholder="0000">
+
+
+      <label for="delivery_to">
+        Til postnummer
+      </label>
+
+      <input
+        id="delivery_to"
+        type="text"
+        inputmode="numeric"
+        placeholder="0000">
+
+
+      <label for="package_weight">
+        Vekt
+      </label>
+
+      <input
+        id="package_weight"
+        type="number"
+        min="0"
+        placeholder="kg">
+
+
+      <label for="package_size">
+        Størrelse
+      </label>
+
+      <select id="package_size">
+        <option value="">Velg størrelse</option>
+        <option>Lite</option>
+        <option>Middels</option>
+        <option>Stort</option>
+        <option>Ekstra stort</option>
+      </select>
+
+
+      <label for="delivery_type">
+        Leveringstype
+      </label>
+
+      <select id="delivery_type">
+        <option value="">Velg leveringstype</option>
+        <option>Standard</option>
+        <option>Ekspress</option>
+        <option>[Annen leveringstype]</option>
+      </select>
+
+
+      <button type="button">
+        Beregn pris
+      </button>
+
+    </div>
+
+
+    <div class="calculator_result">
+
+      <p class="page_label">RESULTAT</p>
+
+      <h2>Veiledende pris</h2>
+
+      <div class="price_result">
+        [Pris]
+      </div>
+
+      <p>
+        Dette er en veiledende beregning. Endelig pris kan avhenge
+        av informasjon om oppdraget.
+      </p>
+
+      <a href="contact.html" class="contact_button">
+        Be om konkret tilbud ↗
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <section class="page_section fade-up">
+
+    <h2>Hva påvirker prisen?</h2>
+
+    <div class="info_grid">
+
+      <article class="info_card">
+        <h3>Størrelse og vekt</h3>
+        <p>
+          Prisen kan påvirkes av hvor stor og tung sendingen er.
+        </p>
+      </article>
+
+      <article class="info_card">
+        <h3>Avstand</h3>
+        <p>
+          Geografisk avstand og leveringssted kan påvirke prisen.
+        </p>
+      </article>
+
+      <article class="info_card">
+        <h3>Leveringstype</h3>
+        <p>
+          Ekspress- og spesialleveranser kan ha andre priser enn
+          standardlevering.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
 
 </main>
+
+
+<footer class="fade-up">
+
+  <div class="footer_container">
+    <div class="footer_text_main">Om oss</div>
+    <a href="about.html" class="footer_text">MIKA AS</a>
+    <a href="sustainability.html" class="footer_text">Bærekraftig Transport</a>
+    <a href="open_positions.html" class="footer_text">Jobbe hos MIKA</a>
+    <a href="privacy_statement.html" class="footer_text">Privacy Statement</a>
+    <a href="cookie_policy.html" class="footer_text">Cookie Policy</a>
+  </div>
+
+  <div class="footer_container">
+    <div class="footer_text_main">Våre tjenester</div>
+    <a href="services.html" class="footer_text">On-Road Leveranse</a>
+    <a href="services.html" class="footer_text">Flyttevask</a>
+    <a href="services.html" class="footer_text">Flyttebyrå</a>
+  </div>
+
+  <div class="footer_container">
+    <div class="footer_text_main">Hjelp</div>
+    <a href="faq.html" class="footer_text">FAQ</a>
+    <a href="transport_info.html" class="footer_text">Pakkeinstruksjoner</a>
+    <a href="transport_info.html" class="footer_text">Viktig informasjon</a>
+    <a href="transport_info.html" class="footer_text">Generelle transportvilkår</a>
+    <a href="claims.html" class="footer_text">Reklamasjonsrett</a>
+    <a href="tracking.html" class="footer_text">Spor pakke</a>
+  </div>
+
+  <div id="footer_last">
+    <img
+      class="footer-logo"
+      src="../img/MIKA.png"
+      alt="MIKA AS">
+
+    <a href="contact.html" class="contact_button">
+      Kontakt oss ↗
+    </a>
+  </div>
+
+</footer>
 
 <script src="../js/app.js"></script>
 

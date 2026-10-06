@@ -52,3 +52,51 @@ faqQuestions.forEach((question) => {
     faq.classList.toggle("open");
   });
 });
+
+selection_step = document.querySelectorAll(".selection_step");
+
+let current_step = 0;
+
+selection_button = document.querySelectorAll(".selection_button");
+
+selection_button.forEach((button) => {
+  button.addEventListener("click", () => {
+    selection_button.forEach((button) => {
+      button.classList.remove("selected");
+    })
+    button.classList.toggle("selected");
+  })
+})
+
+next_step_btn = document.querySelectorAll(".neste_steg");
+
+error = document.querySelector(".error");
+
+next_step_btn.forEach((next_button) => {
+  next_button.addEventListener("click", () => {
+
+    const selected = document.querySelector(".selection_button.selected");
+
+    if (selected) {
+      error.textContent = "";
+
+      if (current_step < selection_step.length - 1) {
+        selection_step[current_step].classList.remove("current");
+
+        current_step++;
+
+        selection_step[current_step].classList.add("current");
+
+        if (current_step === 2) {
+          next_button.textContent = "Send inn";
+        }
+      }
+      else {
+        //TODO: form was sent, re-do/re-shape form to make a message appear "Form sent"
+      }
+    }
+    else {
+      error.textContent = "Du må velge et alternativ";
+    }
+  })
+})
